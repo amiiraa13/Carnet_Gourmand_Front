@@ -1,0 +1,242 @@
+@font-face {
+  font-family: police;
+  src: url(../fonts/Honeymoon.otf);
+}
+body {
+  background-image: url(../img/mushroom-tomatoes-broccoli-garlic-cloves-black-background-with-space-writing-text.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: police;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  font-size: 56px;
+}
+h2 {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+h3 {
+  margin-left: 100px;
+}
+#bouton {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    align-items: center;
+
+}
+p {
+  font-size: 30px;
+}
+#container-Recettes {
+  display: flex;
+  gap: 40px;
+  font-size: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+}
+#container-Recettes > div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+a {
+  list-style-type: none;
+}
+a:hover {
+  color: rgb(154, 145, 145);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 600px;
+  display: none;
+}
+.modal-open {
+  display: block;
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  text-align: center;
+
+  font-size: 30px;
+  background-image: url(../img/Capture\ d’écran\ 2024-06-07\ à\ 14.59.04.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+}
+#croix {
+  max-height: 20px;
+  cursor: pointer;
+}
+
+#new {
+  font-size: 30px;
+}
+
+#new :hover {
+  color: rgb(154, 145, 145);
+  cursor: pointer;
+}
+#divTitre {
+    margin-top: 15px;
+}
+#divInstr {
+  margin: 20px;
+}
+#divTemps {
+  margin: 20px;
+}
+#divDiff {
+  margin: 20px;
+}
+#divCat {
+  margin: 20px;
+}
+button {
+  margin-top: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.selected {
+  color: blue;
+}
+.affIngr {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ingredients {
+  margin: 10px;
+}
+.search-button{
+    font-size: 15px;
+    background-color: transparent;
+    border: solid white;
+    color: white;
+}
+.search-bar{
+    margin: 35px;
+}
+.radio-buttons{
+    font-size: 25px;
+}
+
+@media (max-width: 1200px) {
+    .modal {
+      width: 80%;
+      height: 70%;
+    }
+    
+    h1 {
+      font-size: 48px;
+    }
+    
+    h2 {
+      font-size: 36px;
+    }
+    
+    p {
+      font-size: 24px;
+    }
+    
+    button {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #bouton {
+      flex-direction: column;
+      margin: 30px;
+    }
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    h2 {
+      font-size: 28px;
+    }
+    
+    h3 {
+      margin-left: 50px;
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 20px;
+    }
+    
+    button {
+      font-size: 18px;
+    }
+    
+    #container-Recettes {
+      flex-direction: column;
+      align-items: center;
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      background-size: cover;
+    }
+    
+    h1 {
+      font-size: 28px;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+    
+    h3 {
+      margin-left: 20px;
+      font-size: 18px;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+    
+    button {
+      font-size: 16px;
+    }
+    
+    .modal {
+      width: 90%;
+      height: 60%;
+    }
+  }

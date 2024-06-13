@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Carnet Gourmand</title>
+    <link rel="stylesheet" href="../assets/css/accueil.css" />
+</head>
+<body>
+    <h1>Le Carnet Gourmand</h1>
+    <section id="bouton">
+        <div>
+            <div class="search-bar">
+                <div class="radio-buttons">
+                    <label>
+                        <input type="radio" name="searchOption" value="titre" checked>
+                        <span class="custom-radio"></span>
+                        Titre
+                    </label>
+                    <!-- <label>
+                        <input type="radio" name="searchOption" value="ingredients">
+                        <span class="custom-radio"></span>
+                        Ingrédients
+                    </label> -->
+                    <label>
+                        <input type="radio" name="searchOption" value="categorie">
+                        <span class="custom-radio"></span>
+                        Catégorie
+                    </label>
+                </div>
+                <input type="text" class="search-input" placeholder="Rechercher...">
+                <button type="submit" class="search-button">Rechercher</button>
+            </div>
+        </div>
+        <div id="new">
+        <div onclick="openModal(this)"> Nouvelle recette </div>
+       
+    </div>
+        <div class="overlay"></div>
+        <div class="modal">
+            <div onclick="closeModal()" class="modal-close">
+                <img id="croix" src="../assets/img/fermer-la-croix.png" alt="croix">
+              </div>
+              <h2>Ajouter une recette</h2>
+              <form id="ajouter">
+                <div class="affIngr">
+
+                </div>
+                <div id="divTitre">
+                  <label for="titre">Titre de la recette </label>
+                  <input id="titre" type="text" >
+                </div>
+                
+                <div id="divInstr">
+                    <label for="instructions">Instructions de la recette </label>
+                    <input id="instructions" type="text" >
+                  </div>
+                  <div id="divTemps">
+                    <label for="temps">Temps de la recette </label>
+                    <input id="temps" type="text" >
+                  </div>
+                  <div id="divDiff">
+                    <label for="difficulte">difficulte de la recette </label>
+                    <input id="difficulte" type="text" >
+                  </div>
+                  <div id="divCat">
+                    <label for="categorie">categorie de la recette </label>
+                    <input id="categorie" type="text" >
+                  </div>
+                  <div> <button id="boutAjout" type="submit" >Ajouter </button>
+                </div>
+                 
+               
+              </form>
+            
+        </div>
+    </section>
+    <section id="recettes">
+        <h2>Mes recettes</h2>
+        <div id="container-Recettes">
+
+        </div>
+
+    </section>
+    
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
+
